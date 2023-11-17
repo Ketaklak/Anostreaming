@@ -1,10 +1,10 @@
 <?php
 
 
-$host = '185.98.131.160';      
-$dbname = 'anoma2085346';  
-$user = 'anoma2085346';       
-$pass = 'Guuep@rd05';      
+$host = '';      
+$dbname = '';  
+$user = '';       
+$pass = '';      
 
 $options = [
     PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
