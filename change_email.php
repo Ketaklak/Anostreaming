@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['new_email'])) {
     $new_email = trim($_POST['new_email']);
     
     // Validate the new email
-    if (!filter_var($new_email, FILTER_VALIDATE_EMAIL)) {
+    if (!filter_var($new_email, FILTER_VALIDATE_EMAIL) || strlen($new_email) > 100) {
         $_SESSION['email_update_error'] = 'Invalid email format.';
         header('Location: profile.php');
         exit;
