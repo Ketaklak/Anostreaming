@@ -1,0 +1,8 @@
+RewriteEngine On
+
+# Ne pas appliquer la règle si l'URL correspond à un fichier ou un dossier réel
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Réécriture des requêtes sans l'extension .php si le fichier .php correspondant existe
+RewriteRule ^([^\.]+)$ $1.php [NC,L]

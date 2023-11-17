@@ -1,0 +1,109 @@
+nav.dashboard-nav {
+    background-color: #181818; 
+    border-radius: 15px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); 
+    padding: 10px 20px; 
+    margin-bottom: 30px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+
+nav.dashboard-nav .nav-link {
+    background-color: #e50914; 
+    color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 20px; 
+    text-decoration: none;
+    margin: 0 10px; 
+    transition: background-color 0.3s, transform 0.2s; 
+}
+
+nav.dashboard-nav .nav-link:hover {
+    background-color: #f40612; 
+    transform: translateY(-2px); 
+}
+
+
+nav.dashboard-nav .nav-link-secondary {
+    background-color: transparent; 
+    color: #b3b3b3; 
+}
+
+nav.dashboard-nav .nav-link-secondary:hover {
+    color: #ffffff; 
+}
+
+
+@media (max-width: 768px) {
+    nav.dashboard-nav {
+        flex-direction: column; 
+    }
+
+    nav.dashboard-nav .nav-link,
+    nav.dashboard-nav .nav-link-secondary {
+        margin-bottom: 10px; 
+    }
+}
+
+
+
+.movies,
+.series {
+    background-color: #333; 
+    border-radius: 8px; 
+    margin-bottom: 20px; 
+    padding: 15px; 
+    color: #fff; 
+}
+
+
+.dashboard-content {
+    padding: 20px; 
+}
+
+.dashboard-content h2 {
+    color: #e50914; 
+    margin-bottom: 15px; 
+}
+
+
+.dashboard-content ul {
+    list-style-type: none; 
+    padding: 0; 
+}
+
+.dashboard-content ul li {
+    background-color: #454545; 
+    border-radius: 4px; 
+    padding: 10px; 
+    margin-bottom: 10px; 
+    transition: background-color 0.3s ease; 
+}
+
+.dashboard-content ul li:hover {
+    background-color: #565656; 
+}
+
+
+button {
+    background-color: #e50914; 
+    color: white;
+    border: none; 
+    border-radius: 4px; 
+    padding: 10px 15px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+button:hover {
+    background-color: #f40612; 
+}
+
+
+
+nav.dashboard-nav {
+    z-index: 1000; 
+    position: relative; 
+}
