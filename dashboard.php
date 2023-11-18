@@ -17,3 +17,5 @@ echo "<a href='logout.php'>Logout</a> | <a href='profile.php'>Profile</a>";
 echo "<div class='movies'>Movies list...</div>";
 echo "<div class='series'>Series list...</div>";
 ?>
+<?php include 'display_content.php'; ?>
+<?php echo videoPlayer(); ?>
