@@ -1,25 +1,22 @@
 
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 include('includes/config.php');
 
-function displayContent($conn, $table) {
+function displayContent($pdo, $table) {
     $query = "SELECT * FROM $table";
-    $result = mysqli_query($conn, $query);
+    $stmt = $pdo->prepare($query);
+    $stmt->execute();
 
     echo "<div class='content-bandeau'>";
-    while ($row = mysqli_fetch_assoc($result)) {
+    while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
         echo "<div class='content-item'>";
-        echo "<h3>" . $row['title'] . "</h3>";
-        echo "<p>" . $row['description'] . "</p>";
+        echo "<h3>" . htmlspecialchars($row['title']) . "</h3>";
+        echo "<p>" . htmlspecialchars($row['description']) . "</p>";
         echo "</div>";
     }
     echo "</div>";
 }
 
-echo "<div class='content-wrapper'>";
-echo "<h1>Films</h1>";
-displayContent($conn, 'movies');
-echo "<h1>Séries</h1>";
-displayContent($conn, 'series');
-echo "</div>";
 ?>
