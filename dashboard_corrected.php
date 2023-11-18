@@ -4,7 +4,7 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 include('header.php');
 include('includes/config.php'); // Assurez-vous que ce fichier pointe vers votre configuration réelle de base de données
-include('functions/scripts/display_content.php'); // Inclure le fichier qui affiche le contenu
+include('display_content.php'); // Inclure le fichier qui affiche le contenu
 
 session_start();
 
