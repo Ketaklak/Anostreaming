@@ -41,14 +41,18 @@ echo '<h2>Ajouter un Film/Série</h2>
     <label for="external_link">Lien externe :</label>
     <input type="text" id="external_link" name="external_link" placeholder="http://..."><br>
     <input type="submit" value="Ajouter">
-
-    <label for="cover_image_url">Lien de l'image de couverture :</label>
-    <input type="text" name="cover_image_url" id="cover_image_url"><br>
-    <label for="cover_image_file">Ou téléchargez une image de couverture :</label>
-    <input type="file" name="cover_image_file" id="cover_image_file"><br>
-    <input type="submit" value="Ajouter">
 </form>
-
 ';
 ?>
 
+
+// Ajouter un champ pour l'URL de l'image de couverture
+<label for="cover_image_url">URL de l'image de couverture :</label>
+<input type="text" name="cover_image_url" id="cover_image_url"><br>
+
+// Ajouter un champ pour l'upload de l'image de couverture
+<label for="cover_image_file">Télécharger une image de couverture :</label>
+<input type="file" name="cover_image_file" id="cover_image_file"><br>
+
+// Garder un seul bouton d'envoi
+<input type="submit" value="Ajouter le film/série">
