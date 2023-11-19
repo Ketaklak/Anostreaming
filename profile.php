@@ -65,6 +65,18 @@ if (!isset($_SESSION["id"])) {
     <title>Profil Utilisateur - AnoStream</title>
 </head>
 <body>
+    <!-- Menu déroulant centré -->
+    <div style="text-align: center;">
+        <div class="dropdown" style="display: inline-block;">
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown-content">
+                <a href="dashboard.php">Retour</a>
+                <a href="logout.php">Se déconnecter</a>
+                <a href="dmca.php">DMCA</a>
+            </div>
+        </div>
+    </div>
+
 <div class="profile-container">
     <div class="profile-header"><h1>Profil de l'utilisateur</h1></div>
 <div class="profile-content">
