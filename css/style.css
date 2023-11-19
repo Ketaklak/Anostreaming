@@ -191,6 +191,62 @@ body {
 }
 
 /* Enhancements for profile.php */
+
+
+/* Style amélioré pour le conteneur du menu déroulant */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style amélioré pour le bouton du menu */
+.dropbtn {
+    background-color: #4CAF50; /* Fond vert */
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; /* Coins arrondis */
+    transition: background-color 0.3s ease; /* Transition douce pour la couleur de fond */
+}
+
+/* Contenu du menu déroulant (caché par défaut, avec transition douce) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3); /* Ombre pour la profondeur */
+    z-index: 1;
+    border-radius: 5px; /* Coins arrondis */
+    overflow: hidden; /* Assure que le contenu s'adapte aux coins arrondis */
+}
+
+/* Style pour les éléments individuels du menu */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease; /* Transition douce pour la couleur de fond */
+}
+
+/* Changer la couleur des liens du menu au survol */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Afficher le menu déroulant au survol avec transition douce */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Changer la couleur du bouton du menu au survol */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
 .profile-container {
     max-width: 800px;
     margin: 20px auto;
